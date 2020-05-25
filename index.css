@@ -16,10 +16,19 @@ body {
 }
 
 .content-container {
-    border: 1px solid black;
+    border-left: 1px solid #b1b1b2;
+    border-right: 1px solid #b1b1b2;
     display:flex;
     flex-direction: row;
-    margin: 0 30px 0 10px;
+}
+
+.content-container.first-container {
+    border-top: 2px solid #010001;
+}
+
+.content-container.second-container {
+    border-top: 1px solid #b1b1b2;
+    border-bottom: 2px solid #010001;
 }
 
 .box {
@@ -33,18 +42,39 @@ body {
 }
 
 .mid-box {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid #b1b1b2;
+    border-right: 1px solid #b1b1b2;
     width: 50%;
 }
 
 .subject-box {
-    font-family: 'Overpass', sans-serif;
+    border-left: 1px solid #b1b1b2;
+    display: flex;
+    flex-direction: column;
     width: 75%;
 }
 
+.subject-box span {
+    color: #666567;
+    font-family: 'Overpass', sans-serif;
+    font-size: 35px;
+    height: 25%;
+    padding: 20px 0 0 40px;
+}
+
 .content-title {
+    font-size: 30px;
     font-style: italic;
+    margin: 36px 0 0 0;
+}
+
+.content-text {
+    padding: 0 15px 0 15px;
+}
+
+.content-img {
+    margin: 25px 0 0 0;
+    width: 96%;
 }
 
 .politics {
